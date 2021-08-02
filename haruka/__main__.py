@@ -28,7 +28,7 @@ You know how hard it is sometimes to manage group so here is the solution for yo
 
 I'm group Manager Bot 
 
-Made with love by {DEFAULTUSER}
+Made with love by D.Luffy
 
 Click /help or Help button below to find out more about how to use me to my full potential.
 """
@@ -148,7 +148,7 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START
 
-    keyboard = [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_")]]
+    keyboard = [[InlineKeyboardButton(text="Language", callback_data="set_lang_")]]
     keyboard += [[InlineKeyboardButton(text="🛠 Reporting", callback_data="cntrl_panel_M"), 
         InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
 
