@@ -28,7 +28,7 @@ You know how hard it is sometimes to manage group so here is the solution for yo
 
 I'm group Manager Bot 
 
-Made with love by {DEFAULTUSER}
+Made with love by D.Luffy
 
 Click /help or Help button below to find out more about how to use me to my full potential.
 """
@@ -148,9 +148,9 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START
 
-    keyboard = [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_")]]
+    keyboard = [[InlineKeyboardButton(text="Language", callback_data="set_lang_")]]
     keyboard += [[InlineKeyboardButton(text="🛠 Reporting", callback_data="cntrl_panel_M"), 
-        InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
+        InlineKeyboardButton(text="Help", callback_data="help_back")]]
 
     update.effective_message.reply_text(PM_START.format(escape_markdown(first_name), bot.first_name), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
 
@@ -165,7 +165,7 @@ def control_panel(bot, update):
 
         update.effective_message.reply_text("Contact me in PM to access the control panel.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="Control Panel",
+                                                [[InlineKeyboardButton(text="Pencett🥵🥵",
                                                                        url=f"t.me/{bot.username}?start=controlpanel")]]))
         return
 
